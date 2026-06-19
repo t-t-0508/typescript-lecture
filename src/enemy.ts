@@ -25,9 +25,9 @@ export class Enemy extends Character {
   // 残り HP が 30% 以下 : name + "は必死に抵抗している！"
   attack(): void {
     if (this.getHpRatio() <= 30) {
-      `${this.name}は必死に抵抗している！`;
+      console.log(`${this.name}は必死に抵抗している！`);
       return;
     }
-    `${this.name}は攻撃してきた！`;
+    console.log(`${this.name}は攻撃してきた！`);
   }
 }
