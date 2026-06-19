@@ -12,12 +12,12 @@ export class Enemy extends Character {
 
   //TODO: maxHp に対する現在の hp の割合を返す getHpRatio メソッドを追加する
   getHpRatio(): number {
-    return this.hp / this.maxHp;
+    return (this.hp / this.maxHp) * 100;
   }
 
   //TODO: ダメージを受ける takeDamage メソッドを追加する
   takeDamage(damage: number): void {
-    this.hp - damage;
+    this.hp = this.hp - damage;
   }
 
   //TODO: 残り HP が 30% 以下の場合、行動を変化させる
