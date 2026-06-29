@@ -1,4 +1,4 @@
-import { Character } from './character.ts';
+import { Character } from "./chracters/character.ts";
 
 export class Mage extends Character {
   override attack() {
