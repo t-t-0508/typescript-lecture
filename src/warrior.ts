@@ -1,4 +1,4 @@
-import { Character } from "./chracters/character.ts";
+import { Character } from "./characters/character.ts";
 
 export class Warrior extends Character {
   private weapon: string;
@@ -8,7 +8,7 @@ export class Warrior extends Character {
     this.weapon = weapon;
   }
 
-  override attack(opponent: Character) {
+  override attack() {
     console.log(`${this.name}は${this.weapon}で攻撃した！`);
   }
 }

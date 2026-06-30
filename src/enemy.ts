@@ -1,4 +1,4 @@
-import { Character } from "./chracters/character";
+import { Character } from "./characters/character";
 
 export class Enemy extends Character {
   //TODO: maxHp プロパティを追加する
