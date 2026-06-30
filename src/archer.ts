@@ -1,4 +1,4 @@
-import { Character } from "./chracters/character";
+import { Character } from "./characters/character";
 
 export class Archer extends Character {
   private arrows: number;
