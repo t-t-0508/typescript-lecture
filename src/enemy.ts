@@ -29,6 +29,6 @@ export class Enemy extends Character {
     const power = 20;
     console.log(`${this.name}は攻撃してきた！`);
     opponent.takeDamage(power);
-    console.log("${opponent.name}は${power}のダメージを受けた！");
+    console.log(`${opponent.name}は${power}のダメージを受けた！`);
   }
 }
