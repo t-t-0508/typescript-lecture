@@ -8,11 +8,11 @@ const warrior = new Warrior("アーサー", 100, "エクスカリバー");
 warrior.showStatus();
 warrior.attack();
 
-const mage = new Mage("メディア", 80);
+const mage = new Mage("メディア", 80,"魔法");
 mage.showStatus();
 mage.attack();
 
-const slime = new Enemy("スライム", 50, 50);
+const slime = new Enemy("スライム", 50);
 slime.showStatus();
 slime.attack();
 slime.takeDamage(40);

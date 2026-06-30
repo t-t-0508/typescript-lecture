@@ -1,5 +1,5 @@
 export abstract class Character {
-  protected name: string; // インスタンスからはアクセス出来ないが、継承先からはアクセスできる
+  public name: string; // インスタンスからはアクセス出来ないが、継承先からはアクセスできる
   protected hp: number; // インスタンスからも継承先からもアクセス出来ない
 
   constructor(name: string, hp: number) {
@@ -17,7 +17,7 @@ export abstract class Character {
     this.hp = this.hp - damage;
   }
 
-  isDead(): void {
-    this.hp <= 0;
+  isDead(): boolean {
+    return this.hp <= 0;
   }
 }

@@ -8,7 +8,10 @@ export class Warrior extends Character {
     this.weapon = weapon;
   }
 
-  override attack() {
+  override attack(opponent: Character) {
+    const power = 20;
     console.log(`${this.name}は${this.weapon}で攻撃した！`);
+    opponent.takeDamage(power);
+    console.log(`${opponent.name}は${power}のダメージを受けた！`);
   }
 }
